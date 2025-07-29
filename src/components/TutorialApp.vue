@@ -17,10 +17,10 @@ const props = defineProps({
   }
 })
 
-let Students = [
-  {name:'John', grade:'2', address:'Odlot, Bogo City'},
-  {name:'Alfred', grade:'4', address:'Marangog, Bogo City'},
-  {name:'James', grade:'7', address:'Libertad, Bogo City'}
+let Students: Array<{ name: string; grade: string; address: string }> = [
+  { name: 'John', grade: '2', address: 'Odlot, Bogo City' },
+  { name: 'Alfred', grade: '4', address: 'Marangog, Bogo City' },
+  { name: 'James', grade: '7', address: 'Libertad, Bogo City' }
 ]
 
 onMounted(() => {
@@ -45,8 +45,9 @@ onUnmounted(() => {
   clearInterval(intervalId)
 })
 
-const toggleInputName = (e) => {
-  e.target.classList.toggle('active');
+const toggleInputName = (e: Event) => {
+  const target = e.target as HTMLElement;
+  target.classList.toggle('active');
 }
 
 
@@ -61,7 +62,7 @@ const toggleInputName = (e) => {
       <p v-else>The minute is Even!</p> -->
       <p>The minute is {{ isOddMinute ? 'Odd' : 'Even' }}!</p>
       <ul class="students">
-        <li v-for="student in Students" :key="student">
+        <li v-for="student in Students" :key="student.name">
           <p class="studentinfo">Name: <span>{{ student.name }}&nbsp;</span>
             Grade: <span>{{ student.grade }}&nbsp;</span>
             Address: <span>{{ student.address }}&nbsp;</span>

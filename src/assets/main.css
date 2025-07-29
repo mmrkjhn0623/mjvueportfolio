@@ -422,7 +422,7 @@ a.prj-item.see-more:hover, a.tech-item.see-more:hover{
     aspect-ratio: 276 / 114;
     object-fit: contain;
     object-position: center;
-    min-height: 135px;
+    min-height: 102px;
     transition: transform 0.2s ease;
 }
 #contact{

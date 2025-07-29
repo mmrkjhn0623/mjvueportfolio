@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import WelcomeItem from '../components/WelcomeItem.vue';
-import TheWelcome from '../components/TheWelcome.vue'
+import HeroAndCareer from '../components/HeroAndCareer.vue';
+import FeaturedProjects from '../components/FeaturedProjects.vue';
+import FeaturedTechStacks from '../components/FeaturedTechStacks.vue';
+import ContactForm from '../components/ContactForm.vue';
 </script>
 
 <template>
-    <TheWelcome />
+    <HeroAndCareer />
+    <FeaturedProjects />
+    <FeaturedTechStacks />
+    <ContactForm />
 </template>

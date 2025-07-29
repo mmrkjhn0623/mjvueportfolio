@@ -1,6 +1,13 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted, onUpdated } from 'vue';
 
+const year = ref(new Date().getFullYear());
+onMounted(() => {
+    const currentYearElement = document.getElementById('current-year');
+    if (currentYearElement) {
+        currentYearElement.textContent = year.value.toString();
+    }
+});
 </script>
 <template>
     <footer>

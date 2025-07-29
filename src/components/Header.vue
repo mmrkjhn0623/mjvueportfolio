@@ -1,5 +1,22 @@
 <script setup lang="ts">
-import logo from '../assets/img/startup-logo.png'
+import logo from '../assets/img/startup-logo.png';
+import { ref, onMounted, onUnmounted, onUpdated } from 'vue';
+
+onMounted(() => {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+        document.body.classList.add('dark');
+    }
+});
+
+const themeSwitch = () => {
+    if (localStorage.getItem('theme') && localStorage.getItem('theme') === 'dark') {
+        localStorage.removeItem('theme');
+    } else {
+        localStorage.setItem('theme', 'dark');
+    }
+    document.body.classList.toggle('dark');
+};
 
 </script>
 
@@ -16,7 +33,7 @@ import logo from '../assets/img/startup-logo.png'
                 <nav>
                     <ul>
                         <li>
-                            <button class="theme-switch switch-appearance" id="theme-switcher">
+                            <button class="theme-switch switch-appearance" id="theme-switcher" @click="themeSwitch">
                                 <span class="switch-check">
                                     <span class="switch-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewBox="0 0 24 24" class="switch-appearance-sun">

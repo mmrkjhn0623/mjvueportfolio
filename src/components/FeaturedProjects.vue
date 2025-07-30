@@ -16,7 +16,6 @@ onMounted(async () => {
     } catch (err) {
         console.error('Error fetching featured projects:', err);
     }
-    console.log(dataProjects.value);
 });
 
 </script>
@@ -24,10 +23,10 @@ onMounted(async () => {
   <section id="projects" class="project-list">
         <h2>Projects</h2>
         <div v-if="dataProjects.length" class="project-items" id="featuredprojects">
-            <a class="prj-item loadingph" v-for="project in dataProjects" :key="project.name" :href="project.url" target="_blank">
+            <a class="prj-item" v-for="project in dataProjects" :key="project.name" :href="project.url" target="_blank">
                 <img loading="lazy" :src="project.image" :title="project.name">
             </a>
-            <a class="prj-item see-more" href="#">See More</a>
+            <router-link class="prj-item see-more" to="/projects">See More</router-link>
         </div>
         <div v-else class="project-items" id="featuredprojects">
             <a class="prj-item loadingph" href="#"></a>

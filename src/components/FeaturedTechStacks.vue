@@ -16,7 +16,6 @@ onMounted(async () => {
     } catch (err) {
         console.error('Error fetching tech stacks:', err);
     }
-    console.log(dataTools.value);
 });
 
 </script>
@@ -27,7 +26,7 @@ onMounted(async () => {
             <a class="tech-item" v-for="tool in dataTools" :key="tool.name" :href="tool.url" target="_blank">
                 <img loading="lazy" :src="tool.image" :title="tool.name">
             </a>
-            <a class="prj-item see-more" href="#">See More</a>
+            <router-link class="tech-item see-more" to="/techstacks">See More</router-link>
         </div>
         <div v-else class="tech-items" id="featuredtechstacks">
             <a class="tech-item loadingph" href="#"></a>

@@ -20,7 +20,11 @@
   background-size: 200% 100%;
   animation: loading 2s infinite;
 }
-
+.headingph{
+    width: 180px;
+    height: 24px;
+    border-radius: 2px;
+}
 :root{
     --screen-wide-width: 1280px;
     --screen-content-width: 960px;
@@ -354,6 +358,9 @@ a:hover .social-link-icon{
 .work-desc-toggle{
     font-size: 12px;
     text-decoration: underline;
+}
+.work-desc-toggle a{
+    cursor: pointer;
 }
 .dark .work-desc-toggle{
    text-decoration-color: var(--bold-color-dark);

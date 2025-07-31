@@ -685,6 +685,9 @@ footer a:hover{
     .project-items{
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
+    .overlay{
+        padding: 0px 20px;
+    }
 }
 @media only screen and (max-width: 428px) {
     .project-items, .tech-items{

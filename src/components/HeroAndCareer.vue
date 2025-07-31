@@ -24,13 +24,13 @@ function toggleWorkDesc(offset: string) {
                 <h1>Hello! I'm <br class="formobile"/><span class="accent">Mark John</span>,<br class="formobile"/> Web Developer</h1>
                 <p class="description">I am looking to continue my career to explore more ideas. I have excellent design & coding skills, as well as an ability to convert client requirements into an exciting online applications.</p>
                 <p class="cta">
-                    <a id="sendmessage-action" class="sendmessage" href="#contact">
+                    <a id="sendmessage-action" class="sendmessage btn" href="#contact">
                         <svg width="20" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.1057 2.79061C24.1057 1.50728 23.0557 0.457275 21.7724 0.457275H3.10573C1.8224 0.457275 0.7724 1.50728 0.7724 2.79061V16.7906C0.7724 18.0739 1.8224 19.1239 3.10573 19.1239H21.7724C23.0557 19.1239 24.1057 18.0739 24.1057 16.7906V2.79061ZM21.7724 2.79061L12.4391 8.62394L3.10573 2.79061H21.7724ZM21.7724 16.7906H3.10573V5.12394L12.4391 10.9573L21.7724 5.12394V16.7906Z" fill="#fff"></path></svg>
                         Message Me 
                     </a>
-                    <router-link class="projects" to="/projects">Projects</router-link>
-                    <router-link class="techstacks" to="/techstacks">Tech Stacks</router-link>
-                    <a class="get-a-resume" href="https://firebasestorage.googleapis.com/v0/b/mj-portfolio-55a6e.firebasestorage.app/o/Resume%2FMarkJohnCV.pdf?alt=media&token=3c9550dd-0e73-46c5-954a-87bc0163b96b" target="_blank">
+                    <router-link class="projects btn" to="/projects">Projects</router-link>
+                    <router-link class="techstacks btn" to="/techstacks">Tech Stacks</router-link>
+                    <a class="get-a-resume btn" href="https://firebasestorage.googleapis.com/v0/b/mj-portfolio-55a6e.firebasestorage.app/o/Resume%2FMarkJohnCV.pdf?alt=media&token=3c9550dd-0e73-46c5-954a-87bc0163b96b" target="_blank">
                             Get A Copy Of My Resume
                             <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                             <path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"></path>

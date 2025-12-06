@@ -13,8 +13,8 @@ onMounted(() => {
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; <span id="current-year">2020</span> <a href="#">markjohn.tech</a>. All rights reserved.</p>
-                <p>Designed and Developed by <a href="https://markjohn.tech" target="_blank">Mark John</a></p>
+                <p>&copy; <span id="current-year">2020</span> <a href="#">mjwebdev.online</a>. All rights reserved.</p>
+                <p>Designed and Developed by <a href="https://mjwebdev.online" target="_blank">Mark John</a></p>
             </div>
         </div>
     </footer>

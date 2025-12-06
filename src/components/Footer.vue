@@ -14,7 +14,7 @@ onMounted(() => {
         <div class="container">
             <div class="footer-content">
                 <p>&copy; <span id="current-year">2020</span> <a href="#">mjwebdev.online</a>. All rights reserved.</p>
-                <p>Designed and Developed by <a href="https://mjwebdev.online" target="_blank">Mark John</a></p>
+                <p>Designed and Developed by <a href="https://www.linkedin.com/in/mark-john-mondares-b87888235/" target="_blank">Mark John</a></p>
             </div>
         </div>
     </footer>

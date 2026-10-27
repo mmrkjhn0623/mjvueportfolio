@@ -38,7 +38,7 @@ const SendMessage = (e: Event) => {
         sendMessageText.value = "Sending...";
         (e.target as HTMLButtonElement).disabled = true;
         emailjs.send(
-        "service_ar0ifgb",
+        "service_0mqmaff",
         "template_tgio32o",
         {
             to_name: "MJ",

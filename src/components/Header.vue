@@ -27,7 +27,7 @@ const themeSwitch = () => {
                 <div class="logo">
                     <router-link to="/" class="logo-link">
                         <img :src="logo" alt="Logo">
-                        <span>mjwebdev</span>
+                        <span>mjweb</span>
                     </router-link>
                 </div>
                 <nav>
